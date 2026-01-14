@@ -12,6 +12,8 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.6.RELEASE</version>
+		<!-- 添加这行，告诉Maven不要从本地查找父POM -->
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
