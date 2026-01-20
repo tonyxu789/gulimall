@@ -110,8 +110,8 @@
             </dependency>
 
             <dependency>
-                <groupId>com.zsy</groupId>
-                <artifactId>mall-common</artifactId>
+                <groupId>com.xhc.gulimall</groupId>
+                <artifactId>gulimall-common</artifactId>
                 <version>${mall.version}</version>
             </dependency>
         </dependencies>
