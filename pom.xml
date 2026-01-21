@@ -35,6 +35,8 @@
         <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
         <cloud-alibaba.version>2.2.1.RELEASE</cloud-alibaba.version>
+        <swagger.version>1.5.20</swagger.version>
+        <transmittable-thread-local.version>2.14.4</transmittable-thread-local.version>
     </properties>
 
     <!--  子模块继承父模块之后，提供作用：锁定版本 + 子模块不用再写 version  -->
@@ -113,6 +115,18 @@
                 <groupId>com.xhc.gulimall</groupId>
                 <artifactId>gulimall-common</artifactId>
                 <version>${mall.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>transmittable-thread-local</artifactId>
+                <version>${transmittable-thread-local.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

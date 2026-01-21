@@ -21,6 +21,12 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!-- 依赖传播失效或者缓存不一致 这什么鬼 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>transmittable-thread-local</artifactId>
+        </dependency>
+
     </dependencies>
 
 
