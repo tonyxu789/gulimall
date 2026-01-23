@@ -22,7 +22,8 @@ public class ApiResult<T> implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty("异常码，1：正常 非1 异常")
+    // @ApiModelProperty("异常码，1：正常 非1 异常")
+    @ApiModelProperty("异常码，0：正常 非0 异常")
     private Integer code;
 
     @ApiModelProperty("异常消息")
@@ -43,7 +44,7 @@ public class ApiResult<T> implements Serializable {
 
     public static <T> ApiResult<T> success(T data) {
         ApiResult<T> result = new ApiResult<>();
-        result.setCode(CommonErrorCode.SUCCESS.getCode());
+        result.setCode(CommonErrorCode.SUCCESS_NEW.getCode());
         result.setMessage(null);
         result.setData(data);
         result.setTraceId(TraceContextThreadLocal.getTraceId());

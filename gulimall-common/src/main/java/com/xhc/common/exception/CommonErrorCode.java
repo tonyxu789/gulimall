@@ -15,6 +15,7 @@ import lombok.ToString;
 public enum CommonErrorCode implements IErrorCode {
     /* 枚举 */
     SUCCESS(1, "成功"),
+    SUCCESS_NEW(0, "成功"),
     ERROR(501, "系统异常"),
     NOT_LOGIN(502, "用户未登陆"),
     SYSTEM_ERROR(504, "系统异常"),

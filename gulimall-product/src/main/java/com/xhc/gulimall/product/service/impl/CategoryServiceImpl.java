@@ -53,7 +53,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
 
 
 
-        return categoryEntities;
+        return level1Menus;
     }
 
     // 递归查找所有菜单的子菜单

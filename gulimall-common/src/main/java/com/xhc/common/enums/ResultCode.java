@@ -15,6 +15,7 @@ import org.springframework.util.Assert;
 public enum ResultCode implements IBaseCode {
     /* 成功状态码 */
     SUCCESS(CommonErrorCode.SUCCESS, "success", "成功", HttpStatus.OK),
+    SUCCESS_NEW(CommonErrorCode.SUCCESS_NEW, "success", "成功", HttpStatus.OK),
 
     /* 失败状态码，一般不用 */
     FAILED(CommonErrorCode.FAILED_DEFAULT, "failed", "失败", null),

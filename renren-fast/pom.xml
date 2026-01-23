@@ -44,6 +44,7 @@
 		<fastjson.version>1.2.79</fastjson.version>
 		<hutool.version>4.1.1</hutool.version>
 		<lombok.version>1.18.4</lombok.version>
+		<nacos-discovery.version>2021.0.1.0</nacos-discovery.version>
 
 		<!--wagon plugin 配置-->
 		<service-path>/work/renren</service-path>
@@ -54,6 +55,7 @@
 	</properties>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -238,6 +240,12 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba.cloud</groupId>
+			<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+			<version>${nacos-discovery.version}</version>
 		</dependency>
 	</dependencies>
 
